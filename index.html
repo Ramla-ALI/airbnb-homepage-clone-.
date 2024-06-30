@@ -4,27 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Airbnb Clone</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
 </head>
 <body>
     <header>
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Airbnb_Logo_Bélo.svg" alt="Airbnb Logo">
+        </div>
         <nav>
-            <div class="logo">Airbnb</div>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Explore</a></li>
-                <li><a href="#">Wishlists</a></li>
-                <li><a href="#">Login</a></li>
-                <li><a href="#">Sign Up</a></li>
+            <ul>
+                <li><a href="#">Places to stay</a></li>
+                <li><a href="#">Experiences</a></li>
+                <li><a href="#">Online Experiences</a></li>
             </ul>
         </nav>
+        <div class="auth-links">
+            <a href="#">Log in</a>
+            <a href="#">Sign up</a>
+        </div>
     </header>
-    <section class="hero">
-        <h1>Welcome to Airbnb</h1>
-        <p>Find unique places to stay and things to do.</p>
-        <button class="cta">Explore Now</button>
-    </section>
-    <script src="js/script.js"></script>
+    <main>
+        <section class="hero">
+            <h1>Not sure where to go? Perfect.</h1>
+            <button>I'm flexible</button>
+        </section>
+        <section class="search-bar">
+            <input type="text" id="search" placeholder="Search...">
+            <button onclick="search()">Search</button>
+        </section>
+        <section class="cards">
+            <h2>Explore nearby</h2>
+            <div class="card">
+                <img src="https://via.placeholder.com/300" alt="Location 1">
+                <div class="card-info">
+                    <h3>Location 1</h3>
+                    <p>2-hour drive</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300" alt="Location 2">
+                <div class="card-info">
+                    <h3>Location 2</h3>
+                    <p>3-hour drive</p>
+                </div>
+            </div>
+            <!-- Add more cards as needed -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Airbnb Clone. All rights reserved.</p>
+    </footer>
 </body>
 </html>
 
